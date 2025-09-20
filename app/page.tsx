@@ -47,9 +47,6 @@ export default function HomePage() {
               <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
               </a>
-              <Button variant="outline" onClick={() => setIsLoginOpen(true)}>
-                Sign In
-              </Button>
               <Button onClick={() => setIsLoginOpen(true)}>Get Started</Button>
             </div>
 
@@ -78,9 +75,6 @@ export default function HomePage() {
                 Pricing
               </a>
               <div className="flex gap-2 pt-2">
-                <Button variant="outline" size="sm" onClick={() => setIsLoginOpen(true)}>
-                  Sign In
-                </Button>
                 <Button size="sm" onClick={() => setIsLoginOpen(true)}>
                   Get Started
                 </Button>
