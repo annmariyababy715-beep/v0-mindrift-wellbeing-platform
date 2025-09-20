@@ -4,20 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  Brain,
-  Heart,
-  Moon,
-  BarChart3,
-  FileText,
-  Smartphone,
-  Menu,
-  X,
-  ArrowRight,
-  Star,
-  Shield,
-  Users,
-} from "lucide-react"
+import { Brain, Heart, Moon, BarChart3, FileText, Smartphone, Menu, X, Star, Shield, Users } from "lucide-react"
 import LoginModal from "@/components/login-modal"
 
 export default function HomePage() {
@@ -47,7 +34,6 @@ export default function HomePage() {
               <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
               </a>
-              <Button onClick={() => setIsLoginOpen(true)}>Get Started</Button>
             </div>
 
             <Button
@@ -74,11 +60,6 @@ export default function HomePage() {
               <a href="#pricing" className="block text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
               </a>
-              <div className="flex gap-2 pt-2">
-                <Button size="sm" onClick={() => setIsLoginOpen(true)}>
-                  Get Started
-                </Button>
-              </div>
             </div>
           </div>
         )}
@@ -100,10 +81,6 @@ export default function HomePage() {
               AI-powered interventions to improve your mental wellbeing, sleep quality, and focus.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8" onClick={() => setIsLoginOpen(true)}>
-                Start Your Journey
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                 Watch Demo
               </Button>
@@ -300,10 +277,6 @@ export default function HomePage() {
             Join thousands of users who have improved their mental health and digital balance with Mindrift.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8" onClick={() => setIsLoginOpen(true)}>
-              Start Free Trial
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
               Schedule Demo
             </Button>
